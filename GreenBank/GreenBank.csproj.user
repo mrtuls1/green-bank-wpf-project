@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="UController\ucLoans.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UController\ucPayments.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\AddAccount.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\AddCustomer.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\AddLoan.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\InfoPopup.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UController\ucAccounts.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UController\ucCustomers.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\LoginView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UController\ucLoans.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UController\ucPayments.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\AddAccount.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\AddCustomer.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\AddLoan.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\InfoPopup.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UController\ucAccounts.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UController\ucCustomers.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\LoginView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>
