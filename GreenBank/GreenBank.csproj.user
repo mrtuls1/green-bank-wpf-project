@@ -7,28 +7,37 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="UController\ucLoans.xaml.cs">
+    <Compile Update="UController\Customer\ucAccountCustomer.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="UController\ucPayments.xaml.cs">
+    <Compile Update="UController\Employee\ucLoans.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="View\AddAccount.xaml.cs">
+    <Compile Update="UController\Employee\ucPayments.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="View\AddCustomer.xaml.cs">
+    <Compile Update="View\Customer\CustomerMainWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="View\AddLoan.xaml.cs">
+    <Compile Update="View\Employee\AddAccount.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="View\InfoPopup.xaml.cs">
+    <Compile Update="View\Employee\AddCustomer.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="UController\ucAccounts.xaml.cs">
+    <Compile Update="View\Employee\AddLoan.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="UController\ucCustomers.xaml.cs">
+    <Compile Update="View\Employee\InfoPopup.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UController\Employee\ucAccounts.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UController\Employee\ucCustomers.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Employee\LoanDetail.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="View\LoginView.xaml.cs">
@@ -39,28 +48,37 @@
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="UController\ucLoans.xaml">
+    <Page Update="UController\Customer\ucAccountCustomer.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="UController\ucPayments.xaml">
+    <Page Update="UController\Employee\ucLoans.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="View\AddAccount.xaml">
+    <Page Update="UController\Employee\ucPayments.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="View\AddCustomer.xaml">
+    <Page Update="View\Customer\CustomerMainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="View\AddLoan.xaml">
+    <Page Update="View\Employee\AddAccount.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="View\InfoPopup.xaml">
+    <Page Update="View\Employee\AddCustomer.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="UController\ucAccounts.xaml">
+    <Page Update="View\Employee\AddLoan.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="UController\ucCustomers.xaml">
+    <Page Update="View\Employee\InfoPopup.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UController\Employee\ucAccounts.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UController\Employee\ucCustomers.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Employee\LoanDetail.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\LoginView.xaml">

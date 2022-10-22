@@ -69,7 +69,7 @@ namespace GreenBank.UController {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/GreenBank;V1.0.0.0;component/ucontroller/uccustomers.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/GreenBank;component/ucontroller/uccustomers.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\UController\ucCustomers.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -12,6 +12,7 @@ namespace GreenBank.classes.Models
 {
     public class GetAccountProperty
     {
+        #region Employee
         public static bool FillBranches(List<Branches> branches_list)
         {
 
@@ -215,5 +216,33 @@ namespace GreenBank.classes.Models
             }
             if (state > 0) return true; else return false;
         }
+        #endregion Employee
+
+        #region Customer
+        public static bool GetAccounts(DataGrid grd, string id)
+        {
+            byte state = 1;
+            DatabaseConnection conn = new DatabaseConnection();
+            SqlCommand command = new SqlCommand("select * from accounts where customer_id="+id, conn.SqlConnect());
+
+            try
+            {
+                SqlDataAdapter adapter = new SqlDataAdapter(command);
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+                grd.ItemsSource = null;
+                grd.ItemsSource = dt.DefaultView;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.ToString());
+            }
+            finally
+            {
+                conn.SqlConnect().Dispose();
+            }
+            if (state > 0) return true; else return false;
+        }
+        #endregion Customer
     }
 }

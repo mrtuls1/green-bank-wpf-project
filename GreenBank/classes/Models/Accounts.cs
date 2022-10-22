@@ -10,9 +10,9 @@ namespace GreenBank.classes.Models
     {
         private int id; 
         private string name;
-        private float balance;
-        private float debit;
-        private float credit;
+        private decimal balance;
+        private decimal debit;
+        private decimal credit;
         private int account_type_id;
         private string opening_date;
         private int loan_id;
@@ -22,9 +22,9 @@ namespace GreenBank.classes.Models
         private int employee_id;
 
         public int Id { get => id; set => id = value; }
-        public float Balance { get => balance; set => balance = value; }
-        public float Debit { get => debit; set => debit = value; }
-        public float Credit { get => credit; set => credit = value; }
+        public decimal Balance { get => balance; set => balance = value; }
+        public decimal Debit { get => debit; set => debit = value; }
+        public decimal Credit { get => credit; set => credit = value; }
         public int Account_type_id { get => account_type_id; set => account_type_id = value; }
         public string Opening_date { get => opening_date; set => opening_date = value; }
         public int Loan_id { get => loan_id; set => loan_id = value; }

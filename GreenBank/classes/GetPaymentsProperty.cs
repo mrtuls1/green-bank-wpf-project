@@ -36,6 +36,29 @@ namespace GreenBank.classes
             }
             if (state > 0) return true; else return false;
         }
+        public static bool GetPayment(DataGrid grd,string id)
+        {
+            byte state = 1;
+            DatabaseConnection conn = new DatabaseConnection();
+            SqlCommand command = new SqlCommand("select * from Payments where loan_id="+id, conn.SqlConnect());
 
+            try
+            {
+                SqlDataAdapter adapter = new SqlDataAdapter(command);
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+                grd.ItemsSource = null;
+                grd.ItemsSource = dt.DefaultView;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.ToString());
+            }
+            finally
+            {
+                conn.SqlConnect().Dispose();
+            }
+            if (state > 0) return true; else return false;
+        }
     }
 }

@@ -61,7 +61,7 @@ namespace GreenBank.UController {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/GreenBank;V1.0.0.0;component/view/infopopup.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/GreenBank;component/view/infopopup.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\View\InfoPopup.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

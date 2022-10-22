@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\mertu\source\repos\GreenBank\GreenBank\App.xaml
-101497257618
+13-966524815
 
-37245825363
+41-1285779649
 195-672846551
-MainWindow.xaml;UController\ucAccounts.xaml;UController\ucCustomers.xaml;UController\ucLoans.xaml;UController\ucPayments.xaml;View\AddAccount.xaml;View\AddCustomer.xaml;View\AddLoan.xaml;View\InfoPopup.xaml;View\LoginView.xaml;
+MainWindow.xaml;UController\Customer\ucAccountCustomer.xaml;UController\Employee\ucAccounts.xaml;UController\Employee\ucCustomers.xaml;UController\Employee\ucLoans.xaml;UController\Employee\ucPayments.xaml;View\Customer\CustomerMainWindow.xaml;View\Employee\AddAccount.xaml;View\Employee\AddCustomer.xaml;View\Employee\AddLoan.xaml;View\Employee\InfoPopup.xaml;View\Employee\LoanDetail.xaml;View\LoginView.xaml;
 
-False
+True
 

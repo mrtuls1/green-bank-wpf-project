@@ -21,7 +21,7 @@
             </Grid.ColumnDefinitions>
 
             <!-- Logo ve buton -->
-            <Border Background="#134187" Grid.Column="0" Grid.Row="0">
+            <Border Background="#146356" Grid.Column="0" Grid.Row="0">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="35"/>
@@ -36,7 +36,7 @@
                     <Border Grid.Row="1">
                         <Border.Style>
                             <Style TargetType="Border">
-                                <Setter Property="Background" Value="#134187"/>
+                                <Setter Property="Background" Value="#146356"/>
                                 <Style.Triggers>
                                     <Trigger Property="IsMouseOver" Value="True">
                                         <Setter Property="Background" Value="#FF5F96CF"/>
@@ -48,7 +48,7 @@
                             <Image>
                                 <Image.Style>
                                     <Style TargetType="Image">
-                                        <Setter Property="Source" Value="images/icons/read4.png"/>
+                                        <Setter Property="Source" Value="images/materials/bank.png"/>
                                         <Setter Property="Height" Value="auto"/>
                                         <Setter Property="Width" Value="100"/>
                                         <Style.Triggers>
@@ -80,11 +80,15 @@
                             <Button Content="X"  x:Name="btn_close" Click="btn_close_Click" Style="{DynamicResource minibuttons}" FontSize="12"/>
                         </DockPanel>
                     </Border>
-                    <Border Grid.Row="1" Background="#134187">
+                    <Border Grid.Row="1" Background="#146356">
                         <Border.Effect>
                             <DropShadowEffect Direction="221" Opacity="0.2"/>
                         </Border.Effect>
                         <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="27*"/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition/>
                                 <ColumnDefinition Width="350"/>
@@ -93,7 +97,7 @@
                                 <StackPanel VerticalAlignment="Center" Margin="30,0,0,0">
                                     <DockPanel>
                                         <Label Content="Şubedeki Müşteri Sayısı: " Foreground="White" FontSize="18"/>
-                                        <Label Content="1024" Foreground="#FF33FD45" FontSize="18"/>
+                                        <Label Content="1024" Foreground="Orange" FontSize="18"/>
                                     </DockPanel>
                                     <StackPanel Orientation="Horizontal">
                                         <DockPanel>
@@ -102,7 +106,7 @@
                                         </DockPanel>
                                         <DockPanel>
                                             <Label Content="Ödemeler: " Foreground="White" FontSize="18"/>
-                                            <Label Content="10" Foreground="#FFFD8787" FontSize="18"/>
+                                            <Label Content="850" Foreground="#FFFD8787" FontSize="18"/>
                                         </DockPanel>
                                     </StackPanel>
                                 </StackPanel>
@@ -125,7 +129,7 @@
             </Border>
 
             <!-- Menuler-->
-            <Border Background="#134187" Grid.Column="0" Grid.Row="1">
+            <Border Background="#146356" Grid.Column="0" Grid.Row="1">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition/>
@@ -135,31 +139,31 @@
                     <StackPanel Grid.Row="0">
                         <Button Height="50" Style="{DynamicResource menubuttons}" x:Name="menu_button_credits" Click="menu_button_credits_Click">
                             <DockPanel Width="220" Margin="15,0,0,0">
-                                <Image Source="images/icons/read4.png" Width="32"/>
+                                <Image Source="images/materials/calculation.png" Width="32"/>
                                 <Label Content="Hesaplar" Foreground="White" FontSize="16"/>
                             </DockPanel>
                         </Button>
                         <Button Height="50" Style="{DynamicResource menubuttons}" x:Name="menu_button_payments" Click="menu_button_payments_Click">
                             <DockPanel Width="220" Margin="15,0,0,0">
-                                <Image Source="images/icons/read4.png" Width="32"/>
+                                <Image Source="images/materials/payment-method.png" Width="32"/>
                                 <Label Content="Ödemeler" Foreground="White" FontSize="16"/>
                             </DockPanel>
                         </Button>
                         <Button Height="50" Style="{DynamicResource menubuttons}" x:Name="menu_button_customers" Click="menu_button_customers_Click">
                             <DockPanel Width="220" Margin="15,0,0,0">
-                                <Image Source="images/icons/read4.png" Width="32"/>
+                                <Image Source="images/materials/lending.png" Width="32"/>
                                 <Label Content="Müşteriler" Foreground="White" FontSize="16"/>
                             </DockPanel>
                         </Button>
                         <Button Height="50" Style="{DynamicResource menubuttons}" x:Name="menu_button_loans" Click="menu_button_loans_Click">
                             <DockPanel Width="220" Margin="15,0,0,0">
-                                <Image Source="images/icons/read4.png" Width="32"/>
+                                <Image Source="images/materials/debit-card.png" Width="32"/>
                                 <Label Content="Krediler" Foreground="White" FontSize="16"/>
                             </DockPanel>
                         </Button>
                         <Button Height="50" Style="{DynamicResource menubuttons}">
                             <DockPanel Width="220" Margin="15,0,0,0">
-                                <Image Source="images/icons/read4.png" Width="32"/>
+                                <Image Source="images/materials/gears.png" Width="32"/>
                                 <Label Content="Profil ve Ayarlar" Foreground="White" FontSize="16"/>
                             </DockPanel>
                         </Button>

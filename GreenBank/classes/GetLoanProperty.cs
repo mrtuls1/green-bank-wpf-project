@@ -31,9 +31,9 @@ namespace GreenBank.classes
                     account.Customer_id = int.Parse(dr[10].ToString());
 
                     loan.Id = int.Parse(dr[12].ToString());
-                    loan.Expiry = float.Parse(dr[13].ToString());
-                    loan.Interest = float.Parse(dr[14].ToString());
-                    loan.Quantity = float.Parse(dr[15].ToString());
+                    loan.Expiry = int.Parse(dr[13].ToString());
+                    loan.Interest = decimal.Parse(dr[14].ToString());
+                    loan.Quantity = decimal.Parse(dr[15].ToString());
                     loan.Installment = int.Parse(dr[16].ToString());
                     loan.Starting_date = DateTime.Parse(dr[17].ToString());
                 }
@@ -84,6 +84,7 @@ namespace GreenBank.classes
                 SqlCommand command = new SqlCommand("insert into Loans (expiry,interest,quantity,installment,starting_date,end_date) values (@expiry,@interest,@quantity,@insallment,@starting_date,@end_date)", conn.SqlConnect());
                 SqlCommand command1 = new SqlCommand("select top 1 id from Loans order by id desc", conn.SqlConnect());
                 SqlCommand command2 = new SqlCommand("insert into Accounts (name,description,account_type_id,opening_date,branch_id,customer_id,loan_id) values (@name,@description,@account_type_id,@opening_date,@branch_id,@customer_id,@loan_id)", conn.SqlConnect());
+                SqlCommand command3 = new SqlCommand("exec ins_Loan_Payments @loan_id,@quantity,@expiry,@installment,@interest,@starting_date", conn.SqlConnect());
                 command.Parameters.AddWithValue("@expiry", loan.Expiry);
                 command.Parameters.AddWithValue("@interest", loan.Interest);
                 command.Parameters.AddWithValue("@quantity", loan.Quantity);
@@ -105,10 +106,20 @@ namespace GreenBank.classes
                 command2.Parameters.AddWithValue("@loan_id", loan.Id);
 
                 state = (sbyte)command2.ExecuteNonQuery();
+
+                command3.Parameters.AddWithValue("@loan_id",loan.Id);
+                command3.Parameters.AddWithValue("@quantity",loan.Quantity);
+                command3.Parameters.AddWithValue("@expiry",loan.Expiry);
+                command3.Parameters.AddWithValue("@installment",loan.Installment);
+                command3.Parameters.AddWithValue("@interest",loan.Interest);
+                command3.Parameters.AddWithValue("@starting_date",loan.Starting_date);
+
+                state = (sbyte)command3.ExecuteNonQuery();
+
                 conn.SqlConnect().Dispose();
             }
             catch (Exception ex)
-            {
+                    {
                 MessageBox.Show(ex.ToString());
             }
             finally

@@ -1,4 +1,5 @@
 ﻿using GreenBank.classes;
+using GreenBank.View.Customer;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -53,7 +54,10 @@ namespace GreenBank.View
             }
             else if(LoginProperty.LoginCheck(txtUser.Text, txtPass.Password) == "customer")
             {
-                MessageBox.Show("Müşteri Girişi");
+                CustomerMainWindow mainWindow = new CustomerMainWindow();
+                mainWindow.customer_id = txtUser.Text;
+                mainWindow.Show();
+                this.Close();
             }
         }
     }
